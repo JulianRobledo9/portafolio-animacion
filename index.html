@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Animación Web Creativa</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+
+    <!-- Hero Section con animación -->
+    <!-- Hero Section Rediseñada -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="title-animate">
+                <span class="greeting">¡Hola Mundo!</span>
+                <span class="name">Soy <span class="name-highlight">Julian Robledo</span></span>
+            </h1>
+            <p class="subtitle-animate">
+                <span class="typing-text">Animador Web | Diseñador de Experiencias | Artista Digital</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="cta-button primary">
+                    <span>Ver mis proyectos</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="cta-button secondary">
+                    <span>Contacto</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="animated-avatar">
+                <!-- Puedes reemplazar esto con tu imagen o un SVG animado -->
+                <div class="avatar-circle"></div>
+                <div class="animation-element"></div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse"></div>
+    </div>
+</section>
+
+    <!-- Laboratorios -->
+    <section class="labs-container">
+        <!-- Lab 1: Animaker -->
+        <div class="lab-card" id="lab1">
+            <div class="lab-visual">
+                <video controls class="lab-media">
+                    <source src="assets/videos/videolab1.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <div class="lab-tools">Animaker | Storytelling</div>
+            </div>
+            <div class="lab-details">
+                <h2>Laboratorio #1: Animaker</h2>
+                <div class="lab-description">
+                    <p>🚀 <strong>Reto:</strong> Crear una narrativa animada de 30+ segundos sobre la historia de la programación.</p>
+                    <p>🎨 <strong>Proceso:</strong> Diseñé una línea de tiempo interactiva con:</p>
+                    <ul>
+                        <li>Personajes vintage (Ada Lovelace, Alan Turing)</li>
+                        <li>Transiciones entre épocas (tarjetas perforadas → IA)</li>
+                        <li>Efectos de texto tipo "máquina de escribir"</li>
+                    </ul>
+                    <p>💡 <strong>Logro:</strong> Convertí conceptos abstractos en una historia visualmente atractiva para no técnicos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lab 2: Animation Desk -->
+        <div class="lab-card" id="lab2">
+            <div class="lab-visual">
+                <video controls class="lab-media">
+                    <source src="assets/videos/lab2.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <div class="lab-tools">Animation Desk | Frame-by-Frame</div>
+            </div>
+            <div class="lab-details">
+                <h2>Laboratorio #2: Animation Desk</h2>
+                <div class="lab-description">
+                    <p>✈️ <strong>Concepto:</strong> Animación frame-by-frame de un avión estrellándose.</p>
+                    <p>🔥 <strong>Técnica:</strong> Cada fotograma (de 0.1s) muestra:</p>
+                    <ol>
+                        <li>Avión en picada (frames 1-3)</li>
+                        <li>Impacto con efecto de "cámara temblando" (frames 4-6)</li>
+                        <li>Explosión con partículas (frames 7-10)</li>
+                    </ol>
+                    <p>⚠️ <strong>Dificultad:</strong> Lograr fluidez con solo 10 frames usando el principio de "slow in, slow out".</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lab 3: Inkscape (Vectorización) -->
+        <div class="lab-card" id="lab3">
+            <div class="lab-visual">
+                <div class="comparison-container">
+                    <div class="comparison">
+                        <img src="assets/images/logo nike.png" alt="Nike original" class="lab-media">
+                        <img src="assets/vectores/RobledoJulianVectorizada.svg" alt="Nike vectorizado" class="lab-media">
+                    </div>
+                </div>
+                <div class="lab-tools">Laboratorio #3 - Uso de InkScape</div>
+            </div>
+            <div class="lab-details">
+                <h2>Lab 3: De Píxeles a Vectores</h2>
+                <div class="lab-description">
+                    <p>✔️ <strong>Proceso:</strong> Vectorización del logo de Nike usando:</p>
+                    <ul>
+                        <li><strong>Trazado automático</strong> para formas base</li>
+                        <li><strong>Nodos Bezier</strong> para ajustar curvas</li>
+                        <li><strong>Degradados vectoriales</strong> para el efecto 3D</li>
+                    </ul>
+                    <p>📊 <strong>Resultado:</strong> Imagen escalable sin pérdida de calidad, lista para animación SVG.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lab 4: Inkscape (Calco Manual) -->
+        <div class="lab-card" id="lab4">
+            <div class="lab-visual">
+                <div class="comparison-container">
+                    <img src="assets/images/JulianRobledoOriginal.jpeg" alt="Spider-Man vector" class="lab-media">
+                    <img src="assets/vectores/RobledoJulianVectorizada.svg" alt="Nike vectorizado" class="lab-media">
+                </div>
+                <div class="lab-tools">Inkscape | Calco Manual</div>
+            </div>
+            <div class="lab-details">
+                <h2>Laboratorio #4 - Técnica de Calcado</h2>
+                <div class="lab-description">
+                    <p>🕷️ <strong>Objetivo:</strong> Recuperar la esencia de Spider-Man mediante vectores.</p>
+                    <p>✍️ <strong>Técnicas usadas:</strong></p>
+                    <ul>
+                        <li><strong>Capas separadas</strong> para cuerpo/telaraña/ojos</li>
+                        <li><strong>Path > Simplify</strong> para optimizar nodos</li>
+                        <li><strong>Efecto de sombra paralela</strong> para profundidad</li>
+                    </ul>
+                    <p>🎯 <strong>Aprendizaje:</strong> Precisión milimétrica en curvas Bezier para comics.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lab 5: GIMP (Animación) -->
+        <div class="lab-card" id="lab5">
+    <div class="lab-visual">
+        <!-- Cambia el video por la etiqueta img para GIF -->
+        <img src="assets/images/animacionn.gif" alt="Carro en movimiento" class="lab-media">
+        <div class="lab-tools">GIMP | Animación Fotogramas</div>
+    </div>
+
+            <div class="lab-details">
+                <h2>Laboratorio #5 - Animaciones con GIMP</h2>
+                <div class="lab-description">
+                    <p>🏎️ <strong>Proyecto:</strong> Secuencia de un coche en carretera con:</p>
+                    <ul>
+                        <li><strong>12 capas</strong> (fondo, coche, nubes, etc.)</li>
+                        
+                    </ul>
+                    <p>⏱️ <strong>Duración:</strong> 24 frames a 12fps (2 segundos de animación).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lab 6: GIMP + Inkscape (Loading GIF) -->
+        <!-- Lab 6: GIMP + Inkscape (Loading GIF) -->
+<div class="lab-card" id="lab6">
+    <div class="lab-visual">
+        <img src="assets/images/loading.gif" alt="Loading animation" class="lab-media">
+        <div class="lab-tools">GIMP + Inkscape | Animación CSS</div>
+    </div>
+    <div class="lab-details">
+        <h2>Laboratorio #6 - Animaciones usando GIMP e Inkscape</h2>
+        <div class="lab-description">
+            <p>🌀 <strong>Concepto:</strong> Círculo de carga infinito con:</p>
+            <ul>
+                <li><strong>8 estados intermedios</strong> (fade in/out)</li>
+                <li><strong>Paleta de colores HSV</strong> (transición 360°)</li>
+                <li><strong>Exportación optimizada</strong> (solo 56kb)</li>
+            </ul>
+            <p>⚡ <strong>Aplicación web:</strong> Perfecto para pantallas de carga minimalistas.</p>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- Conclusión -->
+<section class="conclusion-section">
+    <div class="conclusion-container">
+        <h2 class="conclusion-title">Conclusión</h2>
+        
+        <div class="key-takeaways">
+            <div class="takeaway-card">
+                <div class="takeaway-icon">🎨</div>
+                <h3>Narrativa Visual</h3>
+                <p>Domino técnicas de storytelling digital para comunicar ideas complejas mediante animaciones atractivas y claras, esencial para presentaciones técnicas y materiales educativos.</p>
+            </div>
+            
+            <div class="takeaway-card">
+                <div class="takeaway-icon">✏️</div>
+                <h3>Precisión Técnica</h3>
+                <p>He desarrollado habilidades avanzadas en creación y manipulación de gráficos vectoriales, cruciales para diseño de logos, iconos y elementos UI escalables.</p>
+            </div>
+            
+            <div class="takeaway-card">
+                <div class="takeaway-icon">🚀</div>
+                <h3>Animación Web</h3>
+                <p>Integro principios de motion design con herramientas como GSAP y Three.js para crear microinteracciones que mejoran la experiencia de usuario en proyectos digitales.</p>
+            </div>
+        </div>
+        
+        <div class="professional-outlook">
+            <h3>Mi Visión Profesional</h3>
+            <p>Estas habilidades me permitirán:</p>
+            <ul class="vision-list">
+                <li>Desarrollar materiales multimedia impactantes para formación técnica</li>
+                <li>Crear animaciones UI/UX que mejoren la usabilidad de productos digitales</li>
+                <li>Producir contenido visual avanzado para marketing digital</li>
+                <li>Implementar soluciones creativas para necesidades específicas de clientes</li>
+            </ul>
+        </div>
+        
+        <div class="final-statement">
+            <p>"Este curso ha sido la base para mi especialización en animación web profesional. Ahora combino <strong>storytelling visual</strong>, <strong>precisión técnica</strong> y <strong>principios de motion design</strong> para crear experiencias digitales memorables que resuelven problemas reales."</p>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
